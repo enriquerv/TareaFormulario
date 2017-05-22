@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.luisenrique.formulario.MainActivity">
+
+    <LinearLayout
+        android:layout_width="344dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="8dp"
+        app:layout_constraintVertical_bias="0.0">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/iName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/iName"
+            android:layout_marginTop="@dimen/iTop"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fecha de nacimiento"
+            android:textSize="@dimen/textoFechaNacimiento"
+            android:layout_marginTop="@dimen/iTop"
+            android:textColor="@color/negro"/>
+
+        <DatePicker
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/calendar"
+            android:datePickerMode="spinner"
+            android:calendarViewShown="false"
+            android:minDate="2000"
+            android:layout_marginTop="@dimen/marginTopCalendar"
+            android:layout_gravity="center"
+            android:id="@+id/iFecha"
+            >
+        </DatePicker>
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/iTel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/iTel"            />
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/iEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/iEmail"
+            android:layout_marginTop="@dimen/iTop"/>
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/iDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/iDescripcion"
+            android:layout_marginTop="@dimen/iTop"/>
+
+        <Button
+            android:id="@+id/btnEnviar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btnEnviar"
+            android:layout_marginTop="@dimen/iTopBtn"
+            android:theme="@style/raisedButton"
+            />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>
